@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  - var gameTitle = title + " (" + platform + ") "
+  a(href= '/') &lt; Back
+  h1= gameTitle
+  h2 Info
+  table
+    each key in keys
+      tr
+      - var value = game[key]
+        td #{key}
+        td #{value}
+  h2 Images
+  each url in images
+    - var imageJS = "url('" + url + "');"
+    div.center-cropped(style={ 'background-image': imageJS})
+
+    

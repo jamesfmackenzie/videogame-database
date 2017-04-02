@@ -1,0 +1,18 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.center-cropped {
+  width: 640px;
+  height: 480px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+  margin: 0 10px 10px 0;
+}
