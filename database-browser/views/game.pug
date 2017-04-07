@@ -1,9 +1,8 @@
 extends layout
 
 block content
-  - var gameTitle = title + " (" + platform + ") "
   a(href= '/') &lt; Back
-  h1= gameTitle
+  h1= title
   h2 Info
   table
     each key in keys

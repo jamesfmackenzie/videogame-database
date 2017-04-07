@@ -21,7 +21,6 @@ router.get('/:id', function (req, res, next) {
     res.render('game', {
         id: game.id,
         title: game.title,
-        platform: game.platform,
         images: game.images,
         game: game,
         keys: keys

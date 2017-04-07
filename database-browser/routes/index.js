@@ -4,7 +4,7 @@ var _ = require('lodash');
 
 var gameDatabase = require('../../videogame-database.json');
 
-var platforms = _.sortBy(_.map(_.uniqBy(gameDatabase, 'platform'), 'platform'), function (g) {
+var platforms = _.sortBy(_.uniq(_.flatten(_.map(gameDatabase, 'platforms'))), function (g) {
   return g.toLowerCase();
 });
 
