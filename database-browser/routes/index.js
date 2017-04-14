@@ -12,7 +12,7 @@ var platforms = _.sortBy(_.uniq(_.flatten(_.map(gameDatabase, 'platforms'))), fu
 router.get('/', function (req, res, next) {
   res.render('index', {
     _: _,
-    title: 'Videgame Database',
+    title: 'Videogame Database',
     size: gameDatabase.length,
     games: gameDatabase,
     platforms: platforms

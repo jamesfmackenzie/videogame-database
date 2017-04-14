@@ -13,7 +13,7 @@ router.get('/:id', function (req, res, next) {
     });
 
     var keys = _.sortBy(_.filter(Object.keys(game), function (key) {
-        return key != "images" && key != "id" && key != "title";
+        return key != "screenshots" && key != "covers" && key != "id" && key != "title";
     }), function (key) {
         return key.toLowerCase();
     });
@@ -21,7 +21,8 @@ router.get('/:id', function (req, res, next) {
     res.render('game', {
         id: game.id,
         title: game.title,
-        images: game.images,
+        screenshots: game.screenshots,
+        covers: game.covers,
         game: game,
         keys: keys
     });

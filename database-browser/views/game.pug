@@ -10,9 +10,15 @@ block content
       - var value = game[key]
         td #{key}
         td #{value}
-  h2 Images
-  each url in images
-    - var imageJS = "url('" + url + "');"
-    div.center-cropped(style={ 'background-image': imageJS})
+  h2 Screenshots
+  div 
+    each url in screenshots
+      - var imageJS = "url('" + url + "');"
+      div.center-cropped(style={ 'background-image': imageJS})
+  h2 Covers
+  div
+    each url in covers
+      - var imageJS = "url('" + url + "');"
+      div.center-cropped(style={ 'background-image': imageJS})
 
     

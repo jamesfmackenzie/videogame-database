@@ -7,6 +7,10 @@ a {
   color: #00B7FF;
 }
 
+div {
+  overflow: auto;
+}
+
 .center-cropped {
   width: 640px;
   height: 480px;
